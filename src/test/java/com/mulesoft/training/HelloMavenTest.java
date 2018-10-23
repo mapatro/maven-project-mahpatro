@@ -28,8 +28,9 @@ public class HelloMavenTest extends FunctionalTestCase {
     }
     
     @Override
-    protected String getConfigFile() {
-        return "maven-project-mahpatro.xml";
+    protected String[] getConfigFiles() {
+    	String configFiles[] = {"maven-project-mahpatro.xml", "common-resources.xml"};
+         return configFiles;
     }
 
 }
